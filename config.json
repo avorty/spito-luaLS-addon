@@ -1,12 +1,10 @@
 {
+  "name": "spito",
   "$schema": "https://raw.githubusercontent.com/LuaLS/LLS-Addons/main/schemas/addon_config.schema.json",
-  "words": ["my-http-addon", "%s+-http%-addon"],
-  "files": ["network.lua"],
+  "words": ["#!%[(.-)%]"],
+  "files": ["spito.yaml", "spito.yml"],
   "settings": {
     "Lua.workspace.preloadFileSize": 5000,
-    "Lua.workspace.ignoreDir": ["ignore-me"],
-    "Lua.diagnostics.groupSeverity": {
-      "await": "Error"
-    }
+    "Lua.diagnostics.globals": ["main"]
   }
 }
